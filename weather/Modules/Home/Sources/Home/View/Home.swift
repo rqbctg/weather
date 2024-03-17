@@ -22,8 +22,16 @@ public struct HomeView: View {
                 VStack {
                     
                     HStack {
+                       Text("Country")
+                            .font(.title2)
+                       Spacer()
+                       Text(viewModel.location ?? "")
+                            .font(.title2)
+                       Spacer()
+                   }
+                    
+                    HStack {
                         Text("Date")
-                            .font(.title)
                         Spacer()
                         Text(viewModel.date ?? "")
                         Spacer()

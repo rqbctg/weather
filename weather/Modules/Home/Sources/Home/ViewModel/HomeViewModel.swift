@@ -23,6 +23,7 @@ final class HomeViewModel: ObservableObject {
     @Published var windDegree: String?
     @Published var sunrise: String?
     @Published var sunset: String?
+    @Published var country: String?
     
     init(weatherService: WeatherInfoService = WeatherInfoService()) {
         self.weatherService = weatherService
